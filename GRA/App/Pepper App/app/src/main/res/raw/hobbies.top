@@ -1,0 +1,57 @@
+topic: ~hobbies()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+#Possible Questions
+proposal: Here is a picture of Lego building. Lego combines collecting with great play. Many people like to collect certain types of sets, build them, play with them, break them apart and build other stuff. Do you like Lego building?
+proposal: Okay. My collaborators love playing videos, cooking, and dancing. What are your hobbies?
+proposal: Sounds cool! How often do you do your hobbies?
+proposal: Wow. Hobbies are a great way to not get bored! It brings us joy. Enjoy your hobby! This is the end of this topic, you can go back to the main menu and choose another topic.
+
+
+
+#u:(next) ^rand["Do you like this hobby?" "Have you ever taken part in this hobby?" "Are there any memories you associate with this hobby?"] %count
+
+
+#This works (this does not include the error checking)
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+#u: (yes) ^nextProposal %count
+#u: (e:pressed) Are you sure you want to proceed? $pressed==next
+
+#How it works (code below this section):
+#when a user does not answer and the next button have been pressed (indicated by pressed==next), prompt user to make sure they want to move on
+#when the next button is pressed and pressed is equal to next (set in hobbiesssesion.kt), trip the count bookmark (to increment count in hobbiessession.kt), and go to next question
+#when user says 'yes', count will be incremented in hobbiessession.kt and the next question will be given
+#when the user says anything other than 'yes,' the robot will give a random 'go on' or 'okay' or 'great' if pressed is equal to zero (next button has not been pressed)
+
+
+#Possible error checking (user does not speak)
+#if repeat button is pressed then repeat the question
+u: (e:repeat) $repeat==repeat %count Okay, I'll repeat. ^sameProposal
+#if next button is pressed then go to next proposal
+#^rand["Cool" "Okay" "Great"]
+u: (e:pressed $pressed==next $count==0) %count ^sameProposal
+u: (e:pressed $pressed==next $count>0) %count ^nextProposal
+
+u: (e:nextProposal) ^nextProposal
+
+#u:(e:pressed1) $pressed==first ^enableThenGoTo(bookmark1)
+
+#if "next" is typed go to next proposal
+u: (Tami Next) %count ^nextProposal
+#if "repeat" is typed repeats the last question
+u: (Tami Repeat) Okay, I'll repeat. ^sameProposal
+
+u: (this a place holder, do not delete) %count ^nextProposal
+
+u: (thank you) No problem
+
+#u: (e:pressed) $pressed==next %count ^nextProposal
+#u: (yes) ^nextProposal %count
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+
+#Formula:
+#u: (input from human) optional_response condition rand[set_vars_equal_to_value, ^proposals, bookmarks]

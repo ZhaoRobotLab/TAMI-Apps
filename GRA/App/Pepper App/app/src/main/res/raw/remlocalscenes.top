@@ -1,0 +1,43 @@
+topic: ~remlocalscenes()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+proposal: Here is one of my favorite places, Downtown Knoxville. Have you been to downtown Knoxville?
+proposal: Downtown has a lot of fun stuff, beautiful buildings, festivals, theatres, and museums. What do you like to do downtown?
+proposal: Cool! I hope I can be there and try that sometime. Can you suggest us some other beautiful places?
+proposal: Wow, I'm loving it! Have you ever been to other cities?
+proposal: Ooh, how lovely! Nice talk with you about these wonderful local scenes. And thanks for your suggestion. This is the end of this topic, you can go back to the main menu and choose another topic.
+
+
+#u: (yes) What do you see in this picture?
+#u:(_*) ^rand["Tell me about this place." "What kind of activities does this place offer?" "Describe the memories you associate with this place."] %count
+#u: (that's all) Moving on, ready? %next_image
+
+
+#Possible error checking (user does not speak)
+#u: (e:Dialog/NotUnderstood) Are you sure you want to proceed? $pressed==next
+#if repeat button is pressed then repeat the question
+u: (e:repeat) $repeat==repeat Okay, I'll repeat. ^sameProposal
+#if next button is pressed then go to next proposal
+#^rand["Cool" "Okay" "Great"]
+u: (e:pressed $pressed==next $count==0) %count ^sameProposal
+u: (e:pressed $pressed==next $count>0) %count ^nextProposal
+
+u: (e:nextProposal) ^nextProposal
+
+#u:(e:pressed1) $pressed==first ^enableThenGoTo(bookmark1)
+
+#if "next" is typed go to next proposal
+u: (Tammy Next) %count ^nextProposal
+#if "repeat" is typed repeats the last question
+u: (Tammy Repeat) Okay, I'll repeat. ^sameProposal
+
+u: (this a place holder, do not delete) %count ^nextProposal
+
+u: (thank you) No problem
+
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+#u: (e:pressed) $pressed==next ^rand["Cool," "Okay," "Great,"] %count ^nextProposal

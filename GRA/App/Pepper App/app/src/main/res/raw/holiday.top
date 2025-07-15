@@ -1,0 +1,40 @@
+topic: ~reminiscence()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+proposal: Here is my favorite holiday, Christmas Day! Do you like Christmas?
+proposal: Christmas is really the most wonderful time of the year! People decorate the Christmas tree, watch movies, and give present to each other. What do you usually do during Christmas?
+proposal: Sweet! Oh, I find a lot of people get a picture with Santa around Christmas. Have you ever taken a picture with Santa?
+proposal: I hope I will get to take a picture with Santa one day. Do you remember the Christmas in Knoxville two years ago? It was a very white Christmas! What is your favorite memory of Christmas?
+proposal: That sounds like a great time! It was lovely to talk with you about Christmas. This is the end of this topic. You can click “main menu” to go back and choose another topic.
+
+#u: (that's all) Moving on %next_image
+#u:(*) ^rand["go on" okay yeah]
+
+#Possible error checking (user does not speak)
+#u: (e:Dialog/NotUnderstood) Are you sure you want to proceed? $pressed==next
+#if repeat button is pressed then repeat the question
+u: (e:repeat) $repeat==repeat Okay, I'll repeat. ^sameProposal
+#if next button is pressed then go to next proposal
+#^rand["Cool" "Okay" "Great"]
+u: (e:pressed $pressed==next $count==0) %count ^sameProposal
+u: (e:pressed $pressed==next $count>0) %count ^nextProposal
+
+u: (e:nextProposal) ^nextProposal
+
+#u:(e:pressed1) $pressed==first ^enableThenGoTo(bookmark1)
+
+#if "next" is typed go to next proposal
+u: (Tami Next) %count  ^nextProposal
+#if "repeat" is typed repeats the last question
+u: (Tami Repeat) Okay, I'll repeat. ^sameProposal
+
+u: (this a place holder, do not delete) %count ^nextProposal
+
+u: (thank you) No problem
+
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+#u: (e:pressed) $pressed==next ^rand["Cool," "Okay," "Great,"] %count ^nextProposal

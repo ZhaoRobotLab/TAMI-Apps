@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="com.softbank.hardware.pepper" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TamiApp">
+
+        <activity android:name="com.muse.museapp.activities.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.muse.museapp.activities.GRA.GraHome" />
+        <activity
+            android:name="com.muse.museapp.activities.GRA.EnterName" />
+        <activity
+            android:name="com.muse.museapp.activities.GRA.GraSlides" />
+        <activity
+            android:name="com.muse.museapp.activities.GRA.GraQnA" />
+        <activity
+            android:name="com.muse.museapp.activities.GRA.GraQuiz" />
+        <activity
+            android:name="com.muse.museapp.activities.GRA.GraQuizResults" />
+        <activity
+            android:name="com.muse.museapp.activities.GRA.ThankYouScreen" />
+        <service
+            android:name="com.muse.museapp.activities.SpeechService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

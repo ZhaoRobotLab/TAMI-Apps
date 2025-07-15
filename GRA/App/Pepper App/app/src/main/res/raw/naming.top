@@ -1,0 +1,17 @@
+topic: ~naming()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+concept:(snake) [snake python]
+concept:(crocodile) [alligator crocodile]
+
+u:(~snake) ^rand["go on" okay yeah] %ani_snake
+
+u:(elephant) ^rand["go on" okay yeah] %ani_ele
+
+u:(~crocodile) ^rand["go on" okay yeah] %ani_cro
+
+u:(_*) ^rand["go on" okay yeah] %else

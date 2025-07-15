@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/activity_categories.xml" value="0.22" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/activity_toolbar.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/activity_welcome.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/choose_module.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/choose_stress_activity_screen.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/conversation_layout.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/goodbye_screen.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/gra_home.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/gra_qna.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/gra_quiz_results.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/layout_info_log_view.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/name_entry.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/next_activity_screen.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_home.xml" value="0.1" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_qna.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_quiz.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/risk_assesing.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/risk_assesment_questions.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/risk_assessment_intro.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/stress_breathing_activity.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/stress_meditate_activity.xml" value="0.14748349834983498" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/stress_or_knowledge.xml" value="0.1" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/stress_stretching_activity.xml" value="0.1" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/thankyou_screen.xml" value="0.1" />
+        <entry key="..\:/Users/cojob/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/tutorial_layout.xml" value="0.1" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/activity_categories.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/activity_toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/activity_welcome.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/choose_stress_activity_screen.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/conversation_layout.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/goodbye_screen.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/layout_info_log_view.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/next_activity_screen.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_home.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_qna.xml" value="0.1" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_quiz.xml" value="0.12" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_quiz_results.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/rise_slides.xml" value="0.1" />
+        <entry key="..\:/Users/dillo/OneDrive/Documents/GitHub/Genetic-Risk-Assessment/app/src/main/res/layout/stress_guided_imagery_activity.xml" value="0.15896739130434784" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

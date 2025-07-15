@@ -1,0 +1,39 @@
+topic: ~reminiscence()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+proposal: This is one of my favorite pets. It is a Golden Retriever. Do you like dogs?
+proposal: I love Golden retrievers! They are so loyal, gentle, and smart. I wish I could have one. Do you have any pets?
+proposal: Pets are so adorable. Several months ago, I met a Golden retriever. He was a very kind and smart dog. I got to say hello and play with the dog. It was very exciting! Do you have a favorite memory with a pet?
+proposal: Time spent with pets is never wasted! They are our angels. Such a great talk! This is the end of this topic. You can click “main menu” to go back and choose another topic.
+
+#u: (that's all) Moving on %next_image
+#u:(*) ^rand["go on" okay yeah]
+
+#Possible error checking (user does not speak)
+#u: (e:Dialog/NotUnderstood) Are you sure you want to proceed? $pressed==next
+#if repeat button is pressed then repeat the question
+u: (e:repeat) $repeat==repeat Okay, I'll repeat. ^sameProposal
+#if next button is pressed then go to next proposal
+#^rand["Cool" "Okay" "Great"]
+u: (e:pressed $pressed==next $count==0) %count ^sameProposal
+u: (e:pressed $pressed==next $count>0) %count ^nextProposal
+
+u: (e:nextProposal) ^nextProposal
+
+#u:(e:pressed1) $pressed==first ^enableThenGoTo(bookmark1)
+
+#if "next" is typed go to next proposal
+u: (Tammy Next) %count ^nextProposal
+#if "repeat" is typed repeats the last question
+u: (Tammy Repeat) Okay, I'll repeat. ^sameProposal
+
+u: (this a place holder, do not delete) %count ^nextProposal
+
+u: (thank you) No problem
+
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+#u: (e:pressed) $pressed==next ^rand["Cool," "Okay," "Great,"] %count ^nextProposal

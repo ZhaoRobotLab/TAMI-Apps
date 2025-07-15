@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nameButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView44"-->
+    <!--        android:layout_width="644dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="186dp"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:layout_marginEnd="186dp"-->
+    <!--        android:text="Please answer these questions to let me know what kinds of questions you have about the genetic implications of your diagnosis"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#040404"-->
+    <!--        android:textSize="34sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/choose_genre_repeat"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.073" />-->
+
+    <Button
+        android:id="@+id/listenButton2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Listen"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="633dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="186dp"
+        android:text="Before we begin, please type in your name\n or use the listen button and say your name"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/choose_genre_repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/listenButton2"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/choose_genre_rocknroll"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Next"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView34"-->
+    <!--        android:layout_width="650dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginBottom="264dp"-->
+    <!--        android:text="Let's start with a simple\nRisk assessment Form"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="34sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView6"-->
+    <!--        app:layout_constraintVertical_bias="0.311" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView36"-->
+    <!--        android:layout_width="450dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginBottom="150dp"-->
+    <!--        android:text="Please answer these questions to let me know what kinds of issues you are having while caring for your loved ones"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView34"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView35"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_marginBottom="32dp"-->
+    <!--        android:text="Press &quot;Next&quot; to begin"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView7"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <Button
+        android:id="@+id/seat_reminder1_next"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Next"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/seat_reminder1_back"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Back"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/seat_reminder1_repeat"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Repeat"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/seat_reminder1_mainmenu"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Main Menu"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

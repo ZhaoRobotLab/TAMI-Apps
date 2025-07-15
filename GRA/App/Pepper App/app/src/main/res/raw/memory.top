@@ -1,0 +1,10 @@
+topic: ~memory()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+dynamic: word
+u:(_~word) ^rand["go on" okay yeah] ^removeFromConcept(~word, $1) %word
+u:(*) ^rand["go on" okay yeah] %else
