@@ -1,0 +1,39 @@
+topic: ~reminiscence()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+proposal: Here is a picture of my favorite football player, Peyton Manning, playing football. He played college football at University of Tennessee. Manning is the unquestioned best football quarterbacks ever in Tennessee. He led the Vols to the 19 97 Southeastern Conference championship! Do you know Peyton Manning?
+proposal: Peyton Manning's legend will never die! He threw for more than three thousand yards twice. And He became the Number one overall pick of the 98 draft. He’s the best Manning! I love football. It’s so fun! Do you like football?
+proposal: Great! I really love to watch the football game, but unfortunately, I cannot play football. Have you ever played football?
+proposal: Ahha. Football is very popular at the University of Tennessee. What were the most popular sports when you were a child?
+proposal: Sounds cool! Thanks for talking to me about sports! This is the end of this topic, you can go back to the main menu and choose another topic.
+#u: (that's all) Moving on %next_image
+#u:(*) ^rand["go on" okay yeah]
+
+#Possible error checking (user does not speak)
+#u: (e:Dialog/NotUnderstood) Are you sure you want to proceed? $pressed==next
+#if repeat button is pressed then repeat the question
+u: (e:repeat) $repeat==repeat Okay, I'll repeat. ^sameProposal
+#if next button is pressed then go to next proposal
+#^rand["Cool" "Okay" "Great"]
+u: (e:pressed $pressed==next $count==0) %count ^sameProposal
+u: (e:pressed $pressed==next $count>0) %count ^nextProposal
+
+u: (e:nextProposal) ^nextProposal
+
+#u:(e:pressed1) $pressed==first ^enableThenGoTo(bookmark1)
+
+#if "next" is typed go to next proposal
+u: (Tammy Next) %count ^nextProposal
+#if "repeat" is typed repeats the last question
+u: (Tammy Repeat) Okay, I'll repeat. ^sameProposal
+
+u: (this a place holder, do not delete) %count ^nextProposal
+
+u: (thank you) No problem
+
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+#u: (e:pressed) $pressed==next ^rand["Cool," "Okay," "Great,"] %count ^nextProposal

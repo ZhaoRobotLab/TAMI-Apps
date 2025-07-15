@@ -1,0 +1,41 @@
+topic: ~reminiscence()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+proposal: This is a video clip of my favorite show, the Carol Burnett Show. What do you think of this video clip?
+proposal: Yeah, the comedy is hilarious! The two girls here are SO in sync. Even their facial expressions are the same. Have you seen the Carol Burnett show before?
+proposal: The Carol Burnett Show is such a classic. I totally love it! It makes me laugh. Do you like to watch movies or TV show at home?
+proposal: Cool! Are there any popular TV shows you liked to watch, when you were a child?
+proposal: Sounds interesting! I would like to know more about the past TV shows and movies. They are so classic and fun. Thanks for talking to me about TV shows! This is the end of this topic, you can go back to the main menu and choose another topic.
+
+
+#u: (that's all) Moving on %next_image
+#u:(*) ^rand["go on" okay yeah]
+
+#Possible error checking (user does not speak)
+#u: (e:Dialog/NotUnderstood) Are you sure you want to proceed? $pressed==next
+#if repeat button is pressed then repeat the question
+u: (e:repeat) $repeat==repeat Okay, I'll repeat. ^sameProposal
+#if next button is pressed then go to next proposal
+#^rand["Cool" "Okay" "Great"]
+u: (e:pressed $pressed==next $count==0) %count ^sameProposal
+u: (e:pressed $pressed==next $count>0) %count ^nextProposal
+
+u: (e:nextProposal) ^nextProposal
+
+#u:(e:pressed1) $pressed==first ^enableThenGoTo(bookmark1)
+
+#if "next" is typed go to next proposal
+u: (Tammy Next) %count ^nextProposal
+#if "repeat" is typed repeats the last question
+u: (Tammy Repeat) Okay, I'll repeat. ^sameProposal
+
+u: (this a place holder, do not delete) %count ^nextProposal
+
+u: (thank you) No problem
+
+#u: (_*) ^rand["go on" "okay" "great"] $pressed==0
+#u: (e:pressed) $pressed==next ^rand["Cool," "Okay," "Great,"] %count ^nextProposal

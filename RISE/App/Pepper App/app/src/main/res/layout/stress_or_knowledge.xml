@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RISE.RiseSlides">
+
+    <TextView
+        android:id="@+id/slideTitle"
+        android:layout_width="600dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="150dp"
+        android:text="Would you like to choose \n another knowledge module, \n or move on to the \n stress management exercise?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <Button
+        android:id="@+id/rhythm_practice_mainmenu3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Main Menu"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView36"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginBottom="180dp"-->
+<!--        android:text="115 BPM"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView7"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView15"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_marginTop="110dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView9"-->
+<!--        app:srcCompat="@drawable/metronome_background_large" />-->
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/rhythm_practice_metronome3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="112dp"-->
+<!--        android:layout_marginEnd="120dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView9"-->
+<!--        app:srcCompat="@drawable/metronome" />-->
+
+
+    <Button
+        android:id="@+id/pick_knowledge_module"
+        android:layout_width="160dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Knowledge module"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/pick_stress_management_exercise"
+        android:layout_width="160dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Stress management exercise"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.545" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

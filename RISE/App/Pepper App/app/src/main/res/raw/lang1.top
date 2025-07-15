@@ -1,0 +1,13 @@
+topic: ~lang1()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+concept: (sentences) ["the robber of the grey car was stopped by the police" "the student went back to school without his books and pencils"]
+u: (the robber of the grey car was stopped by the police) sentence one is correct %sentence_one
+u: (the student went back to school without his books and pencils) sentence two is correct %sentence_two
+u: (_*) that is not correct %else_option
+u: (yes) %again
+u: (no) %move_on

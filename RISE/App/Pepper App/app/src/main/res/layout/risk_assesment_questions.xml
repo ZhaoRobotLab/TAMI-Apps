@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/pick_duration_mainmenu"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Main Menu"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/pick_duration_mainmenu"
+        app:layout_constraintBottom_toTopOf="@id/button_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Add your text descriptions here -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:text="1. Sleeping during the day and keeping you up at night" />
+
+                <Button
+                    android:id="@+id/yes_button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#3F51B5"
+                    />
+<!--                    android:backgroundTint="@drawable/button_background_selector"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/no_button_1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="NO"-->
+<!--                    android:backgroundTint="#3F51B5"-->
+<!--                    />-->
+<!--                    android:backgroundTint="@drawable/button_background_selector"/>-->
+
+            </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="2. Showing little interest in daily activity" />
+
+            <Button
+                android:id="@+id/yes_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="3. Having problems with bathing or refusing to bath" />
+
+            <Button
+                android:id="@+id/yes_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+             />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+
+            />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="4. Arguing, irritability, complaining, or aggressive" />
+
+            <Button
+                android:id="@+id/yes_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="5. Trouble remembering recent or significant past events" />
+
+            <Button
+                android:id="@+id/yes_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="6. Losing or misplacing things" />
+
+            <Button
+                android:id="@+id/yes_button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_6"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="7. Difficulty concentraiting on a task" />
+
+            <Button
+                android:id="@+id/yes_button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_7"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="8. Appearing sad or depressed or crying" />
+
+            <Button
+                android:id="@+id/yes_button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_8"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="9. Appearing anxious or worried" />
+
+            <Button
+                android:id="@+id/yes_button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_9"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="10. Having problems with dressing or refusing to get dressed" />
+
+            <Button
+                android:id="@+id/yes_button_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_10"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="11. Refusing to eat or eating too much" />
+
+            <Button
+                android:id="@+id/yes_button_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_11"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="12. Believing someone is stealing from them" />
+
+            <Button
+                android:id="@+id/yes_button_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_12"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="13. Seeing people or things that are not there" />
+
+            <Button
+                android:id="@+id/yes_button_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_13"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="14. Accidents of the bowel or bladder" />
+
+            <Button
+                android:id="@+id/yes_button_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_14"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="15. Waking you or other family members up night" />
+
+            <Button
+                android:id="@+id/yes_button_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_15"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="16. Asking the same question over and over" />
+
+            <Button
+                android:id="@+id/yes_button_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_16"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="17. Inappropriate sexual behavior" />
+
+            <Button
+                android:id="@+id/yes_button_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_17"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="18. Following you everywhere " />
+
+            <Button
+                android:id="@+id/yes_button_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_18"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="19. Getting upset when friends or family visit" />
+
+            <Button
+                android:id="@+id/yes_button_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_19"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="20. Wandering outside the house" />
+
+            <Button
+                android:id="@+id/yes_button_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_20"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="21. Problems with driving such as getting lost or not paying attention" />
+
+            <Button
+                android:id="@+id/yes_button_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_21"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="22. Problems with dangerous items, such as a gun or knife" />
+
+            <Button
+                android:id="@+id/yes_button_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_22"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:text="23. Safety concerns about your loved one smoking" />
+
+            <Button
+                android:id="@+id/yes_button_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3F51B5"
+                />
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/no_button_23"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NO"-->
+<!--                android:backgroundTint="#3F51B5"-->
+<!--                />-->
+<!--                android:backgroundTint="@drawable/button_background_selector"/>-->
+
+        </LinearLayout>
+
+            <!-- Repeat the above LinearLayout for other questions -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pick_duration_back"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Back"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pick_duration_repeat"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Repeat"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pick_duration_back" />
+
+    <Button
+        android:id="@+id/pick_duration_next"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="NEXT"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

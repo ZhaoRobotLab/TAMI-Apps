@@ -1,0 +1,10 @@
+topic: ~naming_new()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+dynamic: animals
+u:(_~animals) ^rand["go on" okay yeah] %animal
+u:(*) ^rand["go on" okay yeah] %else
